@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Practical</string>
+    <string name="please_input_values">Please Input Values</string>
+    <string name="operator_not_avail">Operation is not available for operator</string>
+    <string name="number_1">Number 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="ADD">+</string>
+    <string name="SUB">-</string>
+    <string name="DIV">/</string>
+    <string name="MUL">x</string>
+    <string name="output">Output</string>
+    <string name="MOD">%</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="four">Four</string>
+    <string name="three">Three</string>
+    <string name="two">Two</string>
+    <string name="one">One</string>
+</resources>

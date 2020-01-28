@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:hint="@string/number_1"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:paddingEnd="30dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:background="@color/colorPrimary"
+            tools:ignore="RtlSymmetry"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:hint="@string/number_2"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:paddingEnd="30dp"
+            android:textColorHint="@color/textColor"
+            android:textColor="@color/textColor"
+            android:background="@color/colorPrimary"
+            tools:ignore="RtlSymmetry"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll5"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="30sp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:background="@color/colorPrimary"
+            android:onClick="calculator"
+            android:text="@string/ADD"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sub"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:text="@string/SUB"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textSize="30sp"
+            android:layout_marginStart="10sp"
+            android:onClick="calculator"
+            android:textColor="@color/textColor"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/div"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:text="@string/DIV"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textSize="30sp"
+            android:onClick="calculator"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/textColor"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mul"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:text="@string/MUL"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="calculator"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/textColor"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mod"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:text="@string/MOD"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="calculator"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/textColor"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/output"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/v2"
+        android:layout_below="@id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v2"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/male"
+                android:textColor="@color/textColor"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="20sp"
+                android:text="@string/female"
+                android:textColor="@color/textColor"/>
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/one"
+                android:textColor="@color/textColor"/>
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/two"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/three"
+                android:textColor="@color/textColor"/>
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/four"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

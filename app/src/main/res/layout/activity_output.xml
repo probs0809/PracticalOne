@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Output"
+    android:background="@color/colorPrimaryDark">
+    <View
+        android:id="@+id/v1"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/output"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/v2"
+        android:layout_below="@id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/back"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/v2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"/>
+
+</RelativeLayout>
